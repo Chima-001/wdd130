@@ -1,8 +1,6 @@
 :root {
-    --primary-color: saddlebrown;
-    --secondary-color: #f4a261;
+    --primary-color: #e8e8e8;
     --accent1-color: #264253;
-    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -15,8 +13,6 @@
 
 header {
     background-color: var(--primary-color);
-    color: (var(--accent2-color));
-
 }
 
 header img {
@@ -39,7 +35,6 @@ header p {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 header,
@@ -52,7 +47,6 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 nav,
@@ -121,4 +115,12 @@ main section h2 {
 footer img {
     width: 60px;
     height: 60px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    left: -10000px;
+    height: 1px;
+    overflow: hidden;
 }
