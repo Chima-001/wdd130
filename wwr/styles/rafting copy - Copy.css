@@ -1,14 +1,12 @@
 :root {
-    --body-font: Arial, Helvetica, sans-serif;
-    --body-color: #1f2937;
-    --caption-font: italic;
     --primary-color: #ffff;
     --accent1-color: #264253;
     --accent2-color: darkgray;
-    --accent3-color: silver;
     --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --body-color: #1f2937;
     --color1: #000;
-    --button-color: goldenrod;
+    --caption-font: italic;
     --shadow: 0 10px 25px rgba(0, 0, 0, 1);
 }
 
@@ -175,7 +173,7 @@ footer p{
     left: -10000px;
     height: 1px;
     overflow: hidden;
-    color: var(--primary-color);
+    color: var(--color1);
 }
 
 .grid {
@@ -183,6 +181,8 @@ footer p{
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    /*box-shadow: var(--shadow);
+    border: 3px solid;*/
 }
 .grid img {
     width: 22rem;
@@ -205,6 +205,8 @@ footer p{
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-around;
     padding: 20px 0 20px 15px;
+   /* box-shadow: var(--shadow);
+    border: 3px solid;*/
 }
 figcaption {
     display: flex;
@@ -246,25 +248,23 @@ figcaption {
     margin-left: -2em;
 }
 
-.employees figure, fieldset, figcaption{
+.employees figure, fieldset{
    display: flex; 
    flex-direction: column;
-   margin-top: .3em;
 }
 
 .employees figure span{
     font-style: var(--caption-font);
     text-align: center;
-    color: var(--accent3-color);
-    padding: .5em 0 0 2em;
+    margin-top: -1em;
+    color: var(--primary-color);
 }
 
 .company-info {
     text-align: center;
-    font-size: 1rem;
-    color: var(--accent3-color);
+    font-size: 1.3rem;
+    color: var(--primary-color);
     padding-top: 1em;
-    
 }
 
 .contacth1{
@@ -275,34 +275,25 @@ figcaption {
 .user{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    height: 32em;
-}
-
-fieldset{
-    border: none;
-}
-
-iframe, form{
     height: 30em;
 }
 
+iframe, form{
+    height: 22em;
+    
+}
 
-label, .column1 span {
+
+label, span {
     font-size: 1.2em;
+    color: var(--primary-color);
     padding-top: .8em;
-    color:var(--accent3-color);
 }
 
 input, textarea, button{
     border: 2px solid;
     border-radius: 10px;
     margin-bottom: -.5em;
-    font-family: var(--body-font);
-}
-
-input, textarea{
-    background-color:var(--accent2-color);
-    
 }
 
 input[type="text"],[type="email"]{
@@ -313,9 +304,8 @@ input[type="text"],[type="email"]{
 }
 
 input[type="radio"]{
-    margin-left: 3.9em;
+    margin-left: 3.7em;
     margin-bottom: 1.5em;
-    transform: scale(1.5);
 }
 
 .column1{
@@ -338,23 +328,4 @@ textarea{
 
 .column1 span{
     margin-top: -2em;
-}
-
-button{
-    width: 18.7em;
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-top: .5em;
-    padding: .5em;
-    background-color: var(--button-color);
-}
-
-.checkbox label, .column1 label{
-    margin-left: .5em;
-}
-
-.checkbox input{
-    margin-top: .7em;
-    margin-left: .4em;
-    transform: scale(1.5);
 }

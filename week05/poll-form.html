@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 Basic Poll Form</title>
+    <meta name="author" content="Chimamkpam Nnaji">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" required><br>
+                </div>
+
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input type="email" name="useremail" id="email" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="quantity">What is your favorite browser?</label>
+
+                    <select name="browser" id="browser" title="browser">
+                        <option value="1">Chrome</option>
+                        <option value="2">Safari</option>
+                        <option value="3">Edge</option>
+                        <option value="4">Brave</option>
+                    </select><br>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" name="pet" id="pet"><br>
+                </div>
+                <div class="form-item column3">
+                <label for="feedback">List the places you have lived:</label><br>
+                <textarea name="feedback" id="feedback" rows="4"
+                    placeholder="Enugu Nigeria, Hagues Netherlands"></textarea>
+
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

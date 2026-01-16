@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+h1{
+    color: navy;
+    text-align: center;
+}
+
+input, textarea, select, button{
+    width: 40rem;
+    margin-top: 1em;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    
+}
+
+li{
+    margin: 1em;
+    color: navy;
+    font-weight: bold;
+}
+
+input, select{
+    height: 3rem;
+    font-weight: 600;
+}
+
+textarea{
+    height: 8em;
+    font-weight: 600;
+}
+
+label, p{
+    color: black;
+    padding-left: .5em;
+    font-weight: 200;
+}
+
+p{
+    background-color:darkslategray;
+    color: white;
+    width: 25em;
+    padding: 1em;
+    margin: 1em 4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color:honeydew;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+
+button{
+    align-self: center;
+    padding: 1em;
+    color: white;
+    background-color: navy;
+    border-radius: .5em;
+    font-size: 1em;
+    margin-bottom: 2.5em;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    
+}
