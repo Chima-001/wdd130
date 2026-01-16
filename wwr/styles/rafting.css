@@ -1,15 +1,23 @@
 :root {
     --body-font: Arial, Helvetica, sans-serif;
-    --body-color: #1f2937;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --caption-font: italic;
+    --body-color: #1f2937;
     --primary-color: #ffff;
     --accent1-color: #264253;
-    --accent2-color: darkgray;
-    --accent3-color: silver;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --accent2-color: #a9a9a9;
+    --accent3-color: #c0c0c0;
     --color1: #000;
-    --button-color: goldenrod;
-    --shadow: 0 10px 25px rgba(0, 0, 0, 1);
+    --button-color: #daa520;
+    --shadow: 0 10px 25px #000;
+}
+
+main{
+    color: var(--accent2-color);
+}
+
+.h1{
+    color: go;
 }
 
 * {
@@ -35,7 +43,10 @@ header img {
 }    
 
 header nav a{
-    color: var(--color)1;
+    box-shadow: var(--shadow);
+    border: 3px solid;
+    border-radius: 10px;
+    color: var(--color1);
     padding: .5rem;
     font-weight: 1000;
 }    
@@ -78,13 +89,6 @@ header nav ul{
     padding: 2rem;
     box-shadow: var(--shadow);
 }
-
-header nav a{
-    box-shadow: var(--shadow);
-    border: 3px solid;
-    border-radius: 10px;
-}
-
 
 a {
     text-decoration: none;
@@ -216,7 +220,6 @@ figcaption {
 }
 
 .history, .adventures {
-    
     border: 3px solid;
     box-shadow: var(--shadow);
 }
@@ -225,6 +228,10 @@ figcaption {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.socialmedia a{
+    text-decoration: none;
 }
 
 .employees{
