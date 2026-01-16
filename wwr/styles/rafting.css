@@ -16,9 +16,6 @@ main{
     color: var(--accent2-color);
 }
 
-.h1{
-    color: go;
-}
 
 * {
     margin: 0;
