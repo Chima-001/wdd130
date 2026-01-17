@@ -16,10 +16,6 @@ main{
     color: var(--accent2-color);
 }
 
-.h1{
-    color: go;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -354,6 +350,7 @@ button{
     margin-top: .5em;
     padding: .5em;
     background-color: var(--button-color);
+    color: var(--color1);
 }
 
 .checkbox label, .column1 label{
